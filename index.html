@@ -9,6 +9,11 @@
     <title>YUKU</title>
 </head>
 <body class="landing-page">
+
+        <script>
+                document.body.classList.add('fade');
+         </script>
+
     <header id="header" class="flexbox container">
        <div id="header-content" class="flexbox container space-between">
             <h1 id="title"><a href="index.html">Yuku</a></h1>
@@ -56,13 +61,22 @@
   
             <div class="line">  </div>
             <div class="space-between flexbox" style=" width: 72%;margin: 0 14%;">
-            <a class="link" href="#">contact</a>
-            <a class="link" href="./distributors.html">distributors</a>
-             <a class="link" href="#">impressum</a>
+            <a class="link btn" href="#">contact</a>
+            <a class="link btn" href="./distributors.html">distributors</a>
+            <a class="link btn" href="#">impressum</a>
   
             </div>
       
     
   </footer>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+          document.body.classList.remove('fade');
+        });
+       // document.getElementById("btn").addEventListener("click", function(e) {
+         // document.body.classList.remove('fade'); });
+ </script>
+
 </body>
 </html>
