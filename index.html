@@ -6,77 +6,206 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"> <!--
+    function UnCryptMailto( s )
+    {
+        var n = 0;
+        var r = "";
+        for( var i = 0; i < s.length; i++)
+        {
+            n = s.charCodeAt( i );
+            if( n >= 8364 )
+            {
+                n = 128;
+            }
+            r += String.fromCharCode( n - 1 );
+        }
+        return r;
+    }
+    
+    function linkTo_UnCryptMailto( s )
+    {
+        location.href=UnCryptMailto( s );
+    }
+    // --> </script>
+    
+    <!-- Use above link to generate your crypted email (example): -->
     <title>YUKU</title>
 </head>
-<body class="landing-page">
-
+<body  class="landing-page">
         <script>
                 document.body.classList.add('fade');
          </script>
 
-    <header id="header" class="flexbox container">
-       <div id="header-content" class="flexbox container space-between">
-            <h1 id="title"><a href="index.html">Yuku</a></h1>
-        <a class="link" href="https://instagram.com">instagram</a>
-       </div>
-    </header>
-    <div id="portfolio">
+<div id="landing-page">
 
-        
-    <div class="products flexbox container" id="product-one"> 
-        <img  class="mezcal-pic" src="./img/label1.png"/>  
-       <div class="product-info">
-           <h3 class="product-name">tepextate 2019</h3>
-           <br/>
-            <p>Batch: 750 liter <br/> 50cl / 46.4% Alc. vol.</br><br/>
-                Distilled two times in copper. Mashed with the tahona. Fermented six days in an open wood barrol. Fired for seven days using oak wood.
-                <br/><br/> Agave silvestre harvested with men and horse power in the surrounding valleys of San Juan del Río.</p>
-       </div>
-    </div>
-
-    <div class="products flexbox container" id="product-one"> 
-        <img  class="mezcal-pic" src="./img/label2.png"/>  
-       <div class="product-info">
-            <h3 class="product-name">tobalá 2019</h3>
-            <br/>
-            <p>Batch: 750 liter <br/> 50cl / 46.4% Alc. vol.</br></br>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, et dolore magna aliquyam erat.
-            </br></br> Agave silvestre harvested with men and horse power in the surrounding valleys of San Juan del Río.</p>
-       </div>
-    </div>
-
-    <div class="products flexbox container" id="product-one"> 
-        <img  class="mezcal-pic" src="./img/label3.png"/>  
-       <div class="product-info">
-            <h3 class="product-name">madre quixe 2019</h3>
-            <br/>
-            <p>Batch: 750 liter <br/> 50cl / 46.4% Alc. vol.</br></br>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-            </br></br>   Agave silvestre harvested with men and horse power in the surrounding valleys of San Juan del Río.</p>
-       </div>
-    </div>
-
-    </div>
-  <footer id="footer" class="flexbox" >
-  
-            <div class="line">  </div>
-            <div class="space-between flexbox" style=" width: 72%;margin: 0 14%;">
-            <a class="link btn" href="#">contact</a>
-            <a class="link btn" href="./distributors.html">distributors</a>
-            <a class="link btn" href="#">impressum</a>
-  
-            </div>
-      
     
-  </footer>
+    <header id="header" class="flexbox container">
+        <div id="header-content" class="flexbox container space-between">
+             <h1 id="title"><a href="index.html">Yuku</a></h1>
+         <a class="link" href="https://instagram.com">instagram</a>
+        </div>
+     </header>
+     <div id="portfolio">
+ 
+         
+     <div class="products flexbox container" id="product-one"> 
+         <img  class="mezcal-pic" src="./img/label1.png"/>  
+        <div class="product-info">
+            <h3 class="product-name">tepextate 2019</h3>
+            <br/>
+            <p lang="en"><span>mezcal</span> ar&shyti&shyse&shynal jo&shyven <span>ma&shyguey</span> te&shypex&shyta&shyte sil&shyves&shytre <span>pa&shylen&shyque</span> Rodolfo López Soza <span>village</span> San Juan del Rio, Oa&shyxa&shyca <span>inu&shylin breakdown</span> earth oven fired with oak wood <span>mashing</span> turney and stone <span>fermentation</span> with ba&shyga&shyso sym&shybiotic in wood barrel <span>destillation</span> 2x copper <span>batch</span> L1 (156 liter) <span>date distilled</span> Jan. 2019</p>
+        </div>
+     </div>
+ <div class="divide-line"> </div>
+     <div class="products flexbox container" id="product-one"> 
+         <img  class="mezcal-pic" src="./img/label2.png"/>  
+        <div class="product-info">
+             <h3 class="product-name">tobalá 2019</h3>
+             <br/>
+             <p>Batch: 750 liter <br/> 50cl / 46.4% Alc. vol.</br></br>
+                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, et dolore magna aliquyam erat.
+             </br></br> Agave silvestre harvested with men and horse power in the surrounding valleys of San Juan del Río.</p>
+        </div>
+     </div>
+     <div class="divide-line"> </div>
+     <div class="products flexbox container" id="product-one"> 
+         <img  class="mezcal-pic" src="./img/label3.png"/>  
+        <div class="product-info">
+             <h3 class="product-name">madre quixe 2019</h3>
+             <br/>
+             <p>Batch: 750 liter <br/> 50cl / 46.4% Alc. vol.</br></br>
+                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+             </br></br>   Agave silvestre harvested with men and horse power in the surrounding valleys of San Juan del Río.</p>
+        </div>
+     </div>
+ 
+     </div>
+   <footer id="footer" class="flexbox" >
+   
+             <div class="line">  </div>
+             <div class="space-between flexbox" style=" width: 72%;margin: 0 14%;">
+             <a  class="link btn openbtn" id="open-contact" href="">contact</a>
+             <a class="link btn openbtn" id="open-distributors" href="#distributors">distributors</a>
+             <a class="link btn openbtn" id="open-impressum" href="">impressum</a>
+   
+             </div>
+       
+     
+   </footer>
 
-<script>
-        document.addEventListener("DOMContentLoaded", function(e) {
-          document.body.classList.remove('fade');
-        });
-       // document.getElementById("btn").addEventListener("click", function(e) {
-         // document.body.classList.remove('fade'); });
- </script>
+</div>
+
+  <div id="distributors" class="sub-page">
+            <header id="sup-header" class="flexbox container">
+                    <div id="header-content" class="flexbox container space-between">
+                         <h1 id="title"><a href="index.html">Yuku</a></h1>
+                     <a class="link toggle closebtn" id="close-distributors">
+                       <div class="close-container" >
+                           <div class="closeline lefttoright"></div>
+                           <div class="closeline righttoleft"></div>
+                    </div>
+                    </a>
+                    </div>
+                 </header>
+       <div id="portfolio"  class="flexbox container lapidario">
+    
+           
+            <div class="line">  </div>
+           <div id="sub-text">
+           <p>
+                   
+            UK<br/>
+            East London Spirit<br/>
+            300 Old Boar St. <br/>E20BN London<br/>
+            <br/>
+            Ger<br/>
+            Mezcaleria<br/>
+            Goethestr. 36 <br/>03555 Berlin
+           </p>
+           
+           </div>
+            <div class="line">  </div>
+       </div>
+ 
+    </div>
+
+    
+  <div id="contact" class="sub-page">
+        <header id="sup-header" class="flexbox container">
+                <div id="header-content" class="flexbox container space-between">
+                     <h1 id="title"><a href="index.html">Yuku</a></h1>
+                 <a class="link toggle closebtn" id="close-contact">
+                   <div class="close-container" >
+                       <div class="closeline lefttoright"></div>
+                       <div class="closeline righttoleft"></div>
+                </div>
+                </a>
+                </div>
+             </header>
+   <div id="portfolio"  class="flexbox container lapidario">
+
+       
+        <div class="line">  </div>
+       <div id="sub-text">
+       <p>
+            <a href="javascript:linkTo_UnCryptMailto('nbjmup;uftuAuftu/dpn');">hello@yukutest.com</a>
+       </p>
+       
+       </div>
+        <div class="line">  </div>
+   </div>
+
+</div>
+
+
+<div id="impressum" class="sub-page">
+        <header id="sup-header" class="flexbox container">
+                <div id="header-content" class="flexbox container space-between">
+                     <h1 id="title"><a href="index.html">Yuku</a></h1>
+                 <a class="link toggle closebtn" id="close-impressum">
+                   <div class="close-container" >
+                       <div class="closeline lefttoright"></div>
+                       <div class="closeline righttoleft"></div>
+                </div>
+                </a>
+                </div>
+             </header>
+   <div id="portfolio"  class="flexbox container lapidario">
+
+       
+        <div class="line">  </div>
+       <div id="sub-text">
+       <p>
+            Spheric Spirits GmbH<br/>
+            Gustav-Adolf-Str. 45<br/>
+            04105 Leipzig<br/>
+            <br/>
+            Vertreten durch: <br/>
+            Claudio Schöller und Benedict John Skelton<br/>
+            <br/><br/>
+            Kontakt:<br/>
+            Telefon: 0341-xxxxxxxxx<br/>
+            Email: info@sphericspirits.com<br/>
+            <br/>
+            Registereintrag:<br/>
+            Eintragung im Handelsregister.<br/>
+            Registergericht: Amtsgericht Leipzig <br/>
+            Registernummer: HRB XXXXXXXXXX<br/>
+            <br/>
+            Umsatzsteuer-ID:<br/>
+            Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DEXXXXXXXXXX<br/>
+            <br/>
+            Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO: Die Europäische Kommission stellt eine Platt-form zur Online-Streitbeilegung (OS) bereit, die Sie unter <a href="www.ec.europa.eu/consumers/odr">www.ec.europa.eu/consumers/odr</a> finden.
+       </p>
+       
+       </div>
+        <div class="line">  </div>
+   </div>
+
+</div>
+    <script src="./script.js"></script>
 
 </body>
 </html>
