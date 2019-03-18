@@ -58,9 +58,12 @@ transition: 3s opacity;
     display: block;
     z-index: 50;
 }
-
+#sub-page{
+    background-color: #E0DAD4;
+}
 .sub-page{
     background-color: #E0DAD4;
+    height:100vh;
 }
 
 .flexbox {
@@ -196,6 +199,12 @@ height: 1px;
 width: 80%;
 margin:0 10% 1.8rem;
 }
+.impressum-line{
+background-color: #303030;
+height: 1px;
+width: 44%;
+margin:0 28% 1.8rem;
+}
 
 .lapidario{
   
@@ -206,12 +215,25 @@ margin:0 10% 1.8rem;
     width: 60%;
     margin:0 20% 1.8rem; 
 }
+
 #sub-text{
     margin:0 0 1.86rem;
 }
 #sub-text p{
     font-size: 1.2em;
 }
+#impressum-text{
+    margin:auto 35%;
+    width:30%;
+}
+
+#impressum-text p{
+    font-size: .8em;
+}
+#impressum-text a{
+    font-size: 1em;
+}
+
 
 .close-container{
     position: relative;
