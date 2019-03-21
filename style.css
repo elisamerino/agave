@@ -4,6 +4,7 @@
     font-family: 'Encode Sans', sans-serif;
     font-weight: 100;
     font-size: 16px;
+    line-height: 23px;
     color:#303030;
    
 }
@@ -96,9 +97,9 @@ position: fixed;
 top:0;
 width: 100vw;
 margin:0;
-justify-content: center;
+
 align-items:center; 
-background-image: linear-gradient(to bottom, rgba(243, 243, 243,1),rgba(243, 243, 243,0.8), rgba(243, 243, 243,0));
+background-image: linear-gradient(to bottom, rgba(243, 243, 243,1)33%,rgba(243, 243, 243,0.5)67%, rgba(243, 243, 243,0));
 }
 #sup-header{
 height: 12.4vh;
@@ -128,10 +129,20 @@ margin:1rem auto;
     justify-content:space-around;
     scroll-snap-type: y mandatory;
     scroll-snap-type: y proximity;
+    margin: 0vh 10% 0vh;
 }
 .page-content-standard{
-    margin: 20vh 10% 16vh;
+    padding: 20vh 0 16vh;
 }
+.page-content-sub{
+    
+    align-content: center;
+    align-items: center;
+    height: 80vh;
+    top: 0;
+
+}
+
 .impressum-page-content {
     margin:10vh 10% 10vh;
    
@@ -154,7 +165,7 @@ margin:1rem auto;
     align-items:start;
 }
 .mezcal-pic{
-    max-height: 460px;
+  
     width: 250px;
     margin:0 2.5vw;
     object-fit:scale-down;
@@ -214,10 +225,12 @@ margin:0 28% 1.8rem;
     align-content:center;
 }
 .lapidario .line{
-    width: 60%;
-    margin:0 20% 1.8rem; 
+    width: 90%;
+    margin:0 5% 1.8rem; 
 }
-
+.align-center{
+    
+}
 #sub-text{
     margin:0 0 1.86rem;
 }
@@ -273,34 +286,44 @@ margin:0 28% 1.8rem;
     transform: rotate(0deg);
     background-color: rgba(48, 48, 48, 0.72);
   }
-
+  @media only screen and (min-width: 1920px) {
+       
+    *{
+        font-size: 18.5px;
+        line-height: 25px;
+    } 
+  }
 @media only screen and (max-width: 846px) {
 
-    
+  
     *{
         font-size: 14.8px;
     }
     #header{
-        background-image: linear-gradient(to bottom, rgba(243, 243, 243,1),rgba(243, 243, 243,1), rgba(243, 243, 243,0));
-
+    background-image: linear-gradient(to bottom, rgba(243, 243, 243,1)54%,rgba(243, 243, 243,0.86)75%, rgba(243, 243, 243,0));
     }
     .page-content-standard{
-        margin: 20vh 10% 4vh;
+        margin: 0 5% 0;
+        padding:20vh 0 4vh;
+        width: 90%;
     }
-    .page-content-standard{
-        margin: 10vh 10% 4vh;
-    }
+  
+  
     .products{
         padding: 6vh 0 8vh;
     }
     .product-info{
-        margin:2.5rem 5% auto;
-        width:90%;
+        margin:2.5rem 10% auto;
+        width:80%;
     }
     .line{
         margin:0 10% 1.34rem;  
     }
-
+    .mezcal-pic{
+        max-height:auto;
+        width:80%;
+        margin: 0 10%;
+    }
 .impressum-line{
 
 width: 60%;
@@ -317,8 +340,8 @@ margin:0 15% 1.8rem;
     .divide-line{
         background-color: #303030;
         height: 1px;
-        width: 80%;
-        margin:0 10% 1.8rem;}
+        width: 64%;
+        margin:0 18% 1.8rem;}
 .close-container{
  
     width: 36px;
@@ -332,11 +355,31 @@ margin:0 15% 1.8rem;
       }
   }
   
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 640px) {
 
     *{
         font-size: 14px;
   
   }
-
-  
+  .mezcal-pic{
+    max-height:auto;
+    width:90%;
+    margin: 0 5%;
+}
+.product-info{
+    margin:2.5rem 5% auto;
+    width:90%;
+}
+.divide-line{
+    background-color: #303030;
+    height: 1px;
+    width: 76%;
+    margin:0 12% 1.8rem;}
+}
+@media only screen and (max-width:480px){
+    #footer .space-between{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+           }
+}
